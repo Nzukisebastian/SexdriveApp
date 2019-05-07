@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView android:id="@+id/links_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Welcome to SexdriveApp!"
+            android:gravity="center"
+            android:textSize="25dip"
+            android:textColor="#03A9F4"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/forgets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="Do you want to optimise your sexual performance? Do you want to improve your sexual satisfaction? Do you want to do away with with premature ejaculation and weak erections etc? You are not alone we got a solution for you. SexdriveApp is here to unlock a powerful solution for you!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#090809" />
+        
+
+        <TextView
+            android:id="@+id/forgetes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="SexdriveApp is an app designed to educate on natural ways of boosting sex drive.Libido, or sex drive, naturally varies between individuals. Having a low sex drive is not necessarily a problem, but if a person wishes to boost their libido, they can try a range of effective natural methods.In this App, we look some of the best ways that males and females can increase their libido using natural methods."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#090809" />
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/etemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_action_emails"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableLeft="@drawable/ic_action_lock"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_logi"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/btn_regi"
+            android:layout_alignEnd="@+id/btn_regi"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Forgot password?"
+            android:id="@+id/forget"
+            android:textColor="#fe0303"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_regi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No account yet? Create one now"
+            android:layout_gravity="center"
+            android:layout_below="@+id/btn_logi"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#050505" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
